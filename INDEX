@@ -1,0 +1,168 @@
+
+
+
+##LISTA DE PROXYS BRASIL
+##LISTA DE PROXYS BRASIL
+##LISTA DE PROXYS BRASIL
+##LISTA DE PROXYS BRASIL
+
+
+proxies_lista_request = {
+  "http": "http://18.231.133.109:3128",
+  "http": "https://177.54.229.1:9292",
+}
+
+##PARA REQUESTS
+
+##LISTA DE PROXYS BRASIL
+##LISTA DE PROXYS BRASIL
+##LISTA DE PROXYS BRASIL
+##LISTA DE PROXYS BRASIL
+
+##CODIGO PARA WEBSCRAPPING
+##CODIGO PARA WEBSCRAPPING
+##CODIGO PARA WEBSCRAPPING
+##CODIGO PARA WEBSCRAPPING
+##CODIGO PARA WEBSCRAPPING
+##CODIGO PARA WEBSCRAPPING
+##LISTA DE PROXYS http://free-proxy.cz/en/proxylist/country/BR/all/ping/all
+
+########################################################
+########################################################
+########################################################
+########################################################
+########################################################
+import random
+import requests
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time
+
+########################################################
+########################################################
+########################################################
+########################################################
+########################################################
+
+
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--window-size=1920,1080")
+chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows 11; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36")
+
+###################################################
+#para usar VPN WINDOWS basta comentar essas linhas
+proxies_lista = "187.45.127.87:20183" 
+chrome_options.add_argument(f'--proxy-server={proxies_lista}')
+
+#para usar VPN WINDOWS basta comentar essas linhas
+##################################################
+
+driver_EAD = webdriver.Chrome(options=chrome_options)
+##CODIGO PARA WEBSCRAPPING
+##CODIGO PARA WEBSCRAPPING
+##CODIGO PARA WEBSCRAPPING
+##CODIGO PARA WEBSCRAPPING
+##CODIGO PARA WEBSCRAPPING
+##CODIGO PARA WEBSCRAPPING
+
+
+
+
+########################################################
+########################################################
+########################################################
+########################################################
+########################################################
+
+def Sem_Acoes():
+     time.sleep(13)
+     ##driver_EAD.get("https://www.myip.com/")
+     driver_EAD.implicitly_wait(50)
+     driver_EAD.get("https://inscricoes.unicesumar.edu.br/bolsaunicesumar/administracao/?utm_campaign=seguidor")
+     time.sleep(40)
+ 
+     
+def Com_Acoes():
+     time.sleep(13)
+     ##driver_EAD.get("https://www.myip.com/")
+     driver_EAD.implicitly_wait(50)
+     driver_EAD.get("https://inscricoes.unicesumar.edu.br/bolsaunicesumar/administracao/?utm_campaign=seguidor")
+     l = driver_EAD.find_element(By.CLASS_NAME, "form-control")
+     l.send_keys("Leandro")
+     l = driver_EAD.find_element(By.ID, "javisEmail")
+     l.send_keys("l@l.com")
+     l = driver_EAD.find_element(By.ID, "javisTelefone")
+     l.send_keys("2199876530")
+     l = driver_EAD.find_element(By.ID, "javisCpf")
+     l.send_keys("12345678901")
+     teste = driver_EAD.find_element(By.CLASS_NAME, "select2")
+     teste.click()
+     teste2 = driver_EAD.find_element(By.CLASS_NAME, "select2-search__field")
+     CURSOS__ = ['Agronegócio','Administração','Análise e Desenvolvimento de Sistemas','Arquitetura e Urbanismo','Artes Visuais','Automação Industrial','Biomedicina','Ciências Biológicas','Educação Física - Licenciatura','Design de Interiores','Teologia','Logística'] 
+     teste2.send_keys(random.choice(CURSOS__))
+     teste2.send_keys(Keys.ENTER)
+     time.sleep(40)
+    
+    
+    
+    
+    
+def Com_requests():
+      time.sleep(13)
+      driver_EAD.implicitly_wait(50)
+      requests.get("http://ead.unicesumar.edu.br/yFbdOq", proxies=proxies_lista_request)
+      time.sleep(113)
+     
+
+
+     
+     
+     
+     
+     
+     
+     
+         
+try:
+    
+    
+    for Analise_01 in range(14):
+     time.sleep(14)
+     Sem_Acoes()
+     print(Analise_01, 'SEM AÇÔES')
+     time.sleep(32)
+     Com_Acoes()
+     print(Analise_01, 'http://ead.unicesumar.edu.br/yFbdOq')
+     
+ 
+    for Analise_02  in range(18):
+     time.sleep(14)
+     Sem_Acoes()
+     print(Analise_01, 'SEM AÇÔES')
+     time.sleep(16)
+     Com_Acoes()
+     print(Analise_02, 'http://ead.unicesumar.edu.br/yFbdOq')
+
+
+finally:
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    
+    driver_EAD.quit()
+    
+
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    ##FINALIZAR AÇỗES::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+    
